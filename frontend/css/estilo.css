@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 body {
     width: 500px;
     margin: 20px auto;
     padding: 5px 50px;
+    font-family: 'Lato', sans-serif;
 }
 
 h2 {
     text-align: center;
+    color: coral;
 }
 
 .curso {
@@ -28,7 +32,6 @@ h2 {
     font-size: 2rem;
     color: #fff;
 }
-
 
 input,
 textarea {
