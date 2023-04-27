@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
 });
 
 router.post(
-  "/create",
+  "/",
   [
     //validação dos dados
     body("nome").notEmpty().trim().withMessage("O campo nome é obrigatório"),
@@ -34,5 +34,10 @@ router.post(
     res.status(201).send("Curso criado com sucesso!");
   }
 );
+
+router.put(
+  "/update",
+  
+)
 
 export default router;
