@@ -60,7 +60,7 @@ router.put('/update/:id',
 
     const id = req.params.id;
 
-    curso.update(req.body, {
+    await curso.update(req.body, {
       where: { id: id }
     })
     res.status(200).send("Curso Atualizado com Sucesso!")
@@ -68,7 +68,7 @@ router.put('/update/:id',
 
 router.delete('/delete/:id', async (req, res) => {
   const id = req.params.id;
-  curso.destroy({
+  await curso.destroy({
     where:{
       id: id
     },

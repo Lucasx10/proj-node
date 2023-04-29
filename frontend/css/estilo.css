@@ -52,7 +52,7 @@ textarea {
 button {
     padding: 10px;
     font-size: 1.2em;
-    background-color: rgb(27, 27, 177);
+    background-color:rgba(10, 40, 88, 0.955);
     color: #fff;
     border-radius: 5px;
     border: none;
@@ -65,3 +65,47 @@ button {
     border-radius: 5px;
     margin: 10px 0;
 }
+
+.create-curso {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%);
+    background:  rgba(11, 29, 58, 0.898);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(20, 26, 80, 0.879);
+    border-radius: 10px;
+}
+
+.edit-curso {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    width: 400px;
+    padding: 55px;
+    transform: translate(-50%);
+    background:  rgba(11, 29, 58, 0.898);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(20, 26, 80, 0.879);
+    border-radius: 10px;
+}
+
+.info-form {
+    color: #ffffff;
+    padding: 4px;
+}
+
+.edit-curso form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px
+  }
