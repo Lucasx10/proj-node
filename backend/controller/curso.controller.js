@@ -8,6 +8,15 @@ export class CursoController {
     return cursos;
   }
 
+  async get(cursoId){
+    const cursos = await this.curso.findAll({
+      where:{
+        id: cursoId
+      }
+    });
+    return cursos;
+  }
+
   async adicionar(cursoDTO) {
     try {
       console.log(cursoDTO);

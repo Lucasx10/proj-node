@@ -12,11 +12,11 @@ router.get("/", async (req, res) => {
   res.json(cursos);
 });
 
-// router.get("/:id", async (req, res) => {
-//   const id = req.params.id;
-//   const cursos = await cursoController.get(id);
-//   res.json(cursos);
-// });
+router.get("/:id", async (req, res) => {
+  const id = req.params.id;
+  const cursos = await cursoController.get(id);
+  res.json(cursos);
+});
 
 router.post(
   "/",
