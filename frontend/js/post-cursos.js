@@ -27,7 +27,6 @@ async function enviarDadosParaAPI (curso) {
     const resposta = await fetch('http://localhost:3000/cursos', {
       method: 'POST',
       headers: {
-        Accept: 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(curso)

@@ -13,7 +13,7 @@ export class CursoController {
       console.log(cursoDTO);
       await this.curso.create(cursoDTO);
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
   }
 }

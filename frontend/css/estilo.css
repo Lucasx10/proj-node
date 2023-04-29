@@ -9,19 +9,26 @@ body {
 
 h2 {
     text-align: center;
-    color: coral;
+    color: rgb(27, 27, 177);
 }
 
-.curso {
+.cursos {
     padding: 5px 10px 0 5px;
-    border-bottom: 1px dashed #eee;
+    border-bottom: 3px  inset;
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: rgb(27, 27, 177);
 }
 
 .btn-add {
     position: fixed;
     right: 5rem;
     bottom: 5rem;
-    background-color: green;
+    background-color: rgb(27, 27, 177);
     width: 4rem;
     height: 4rem;
     display: flex;
@@ -45,7 +52,7 @@ textarea {
 button {
     padding: 10px;
     font-size: 1.2em;
-    background-color: green;
+    background-color: rgb(27, 27, 177);
     color: #fff;
     border-radius: 5px;
     border: none;
