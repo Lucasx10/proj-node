@@ -19,7 +19,7 @@ router.get("/:id", async (req, res) => {
 });
 
 router.post(
-  "/",
+  "/create",
   [
     //validação dos dados
     body("nome").notEmpty().trim().withMessage("O campo nome é obrigatório"),
@@ -42,7 +42,7 @@ router.post(
   }
 );
 
-router.put('/update/:id', 
+router.put('/update/:id',
   [
     //validação dos dados
     body("nome").notEmpty().trim().withMessage("O campo nome é obrigatório"),
@@ -64,12 +64,12 @@ router.put('/update/:id',
       where: { id: id }
     })
     res.status(200).send("Curso Atualizado com Sucesso!")
-});
+  });
 
 router.delete('/delete/:id', async (req, res) => {
   const id = req.params.id;
   await curso.destroy({
-    where:{
+    where: {
       id: id
     },
   })

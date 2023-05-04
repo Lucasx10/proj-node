@@ -7,7 +7,7 @@ add.addEventListener('click', () => {
   enviarDadosParaAPI(curso)
 })
 
-function getDadosForm () {
+function getDadosForm() {
   const inputNome = document.querySelector('#nome')
   const inputCh = document.querySelector('#ch')
   if (inputNome.value === null || inputCh.value === null) {
@@ -22,9 +22,9 @@ function getDadosForm () {
   return curso
 }
 
-async function enviarDadosParaAPI (curso) {
+async function enviarDadosParaAPI(curso) {
   try {
-    const resposta = await fetch('http://localhost:3000/cursos', {
+    const resposta = await fetch('http://localhost:3000/cursos/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ async function enviarDadosParaAPI (curso) {
   }
 }
 
-function limparCampos () {
+function limparCampos() {
   document.querySelector('#nome').value = ''
   document.querySelector('#ch').value = ''
 }
